@@ -703,6 +703,10 @@
   .texto-bonus .sec-texto h4{color:var(--tinta);font-size:15.5px;margin:12px 0 4px}
   .texto-bonus .sec-texto ul{margin:4px 0 8px 18px}
   .texto-bonus .sec-texto p{margin:6px 0}
+  .pre-push{text-align:center}
+  .pre-push .pp-ico{font-size:44px;line-height:1;margin:4px 0 10px}
+  .pre-push h3{font-family:var(--titulo);font-weight:800;font-size:22px;line-height:1.2;margin-bottom:8px}
+  .pre-push .sub{color:var(--texto-2);margin-bottom:18px}
 </style>
 </head>
 <body>
@@ -998,6 +1002,9 @@
 (function () {
   var URL_ACESSO = 'https://dxybmayffxvepmwbyezc.supabase.co/functions/v1/membros-acesso';
   var URL_SUPORTE = 'https://dxybmayffxvepmwbyezc.supabase.co/functions/v1/membros-suporte';
+  var URL_PUSH = 'https://dxybmayffxvepmwbyezc.supabase.co/functions/v1/membros-push';
+  // chave pública VAPID: a mesma do clubedajuh (a privada é o segredo VAPID_JWK do Supabase)
+  var VAPID_PUBLICO = 'BL3VPB_YP8gLJ-W95Q-EtBt_OzhCRBJjqQbyJ4mOJlkj1P_XXyspKsPYMsOnJegixdzDKlggt_O6MVN_USlBC9c';
   // item que o webhook da venda precisa gravar em membros_compras para liberar a apostila
   var ITEM = 'carteiras';
   // ⚠ enquanto o webhook do checkout das carteiras não estiver ligado, nenhum e-mail
@@ -1014,6 +1021,16 @@
   function s(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} }
   function itens() { try { return JSON.parse(g(CHAVE_ITENS) || '[]'); } catch (e) { return []; } }
   function perfil() { try { return JSON.parse(g(CHAVE_PERFIL) || '{}'); } catch (e) { return {}; } }
+  // perfil já preenchido com o nome e o telefone da compra (a cliente pode editar depois).
+  // Guardado por e-mail: trocar de conta no mesmo aparelho não mistura os perfis.
+  function nomeBonito(n) { return String(n || '').trim().toLowerCase().replace(/\s+/g, ' ').replace(/(^|\s)(\p{L})/gu, function (x, a, b) { return a + b.toUpperCase(); }).replace(/ (Da|De|Do|Das|Dos|E) /g, function (x) { return x.toLowerCase(); }); }
+  function preencherPerfil(email, nome, tel) {
+    var pf = perfil();
+    if (pf.dono !== email) pf = { dono: email };
+    if (!pf.nome && nome) pf.nome = nomeBonito(nome);
+    if (!pf.telefone && tel) pf.telefone = String(tel);
+    s(CHAVE_PERFIL, JSON.stringify(pf));
+  }
   function json(o, st) { return Promise.resolve(new Response(JSON.stringify(o), { status: st || 200, headers: { 'Content-Type': 'application/json' } })); }
 
   function montarMe() {
@@ -1029,7 +1046,7 @@
       prod[k] = { liberado: liberado, embreve: !!p.embreve, pasta: liberado ? '/assets/livros/' + k + '/' : null };
     });
     var pf = perfil();
-    return json({ ok: true, email: email, produtos: prod,
+    return json({ ok: true, email: email, produtos: prod, vapid: VAPID_PUBLICO,
       perfil: { nome: pf.nome || '', foto: pf.foto || '', nivel: pf.nivel || '' } });
   }
 
@@ -1043,7 +1060,7 @@
 
     if (u.indexOf('/api/login') === 0) {
       var email = String(corpo.email || '').trim().toLowerCase();
-      if (TESTE[email]) { s(CHAVE_EMAIL, email); s(CHAVE_ITENS, JSON.stringify(TESTE[email])); return json({ ok: true }); }
+      if (TESTE[email]) { s(CHAVE_EMAIL, email); s(CHAVE_ITENS, JSON.stringify(TESTE[email])); preencherPerfil(email, 'MARIA DE TESTE SILVA', ''); return json({ ok: true }); }
       return puro(URL_ACESSO, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email: email }) })
         .then(function (r) { return r.ok ? r.json() : { itens: [] }; })
         .then(function (d) {
@@ -1051,6 +1068,7 @@
           var vale = lista.indexOf(ITEM) >= 0 || (ACEITA_QUALQUER_COMPRA && lista.length > 0);
           if (!vale) return json({ ok: false, erro: 'naocomprou' });
           s(CHAVE_EMAIL, email); s(CHAVE_ITENS, JSON.stringify(lista));
+          preencherPerfil(email, d.nome, d.telefone);
           return json({ ok: true });
         });
     }
@@ -1074,7 +1092,19 @@
         .catch(function () { return json(enviar ? { ok: false, erro: 'falha' } : { chamados: [] }); });
     }
     if (u.indexOf('/api/feedback') === 0) return json({});
-    return json({ ok: false }, 404);     // push: sem servidor, fica desligado
+    // push: Edge Function membros-push guarda a inscrição ligada ao e-mail (membros_push) e envia
+    if (u.indexOf('/api/push') === 0) {
+      var emp = g(CHAVE_EMAIL);
+      if (!emp) return json({ ok: false }, 401);
+      var met = (opt.method || 'GET').toUpperCase(), ped;
+      if (met === 'DELETE') ped = { acao: 'remover', endpoint: corpo.endpoint };
+      else if (corpo.teste) ped = { acao: 'teste', email: emp, app: 'carteiras' };
+      else ped = { acao: 'inscrever', email: emp, app: 'carteiras', sub: corpo.sub, ua: navigator.userAgent };
+      return puro(URL_PUSH, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(ped) })
+        .then(function (r) { return r.json().then(function (d) { return json(d, r.ok ? 200 : r.status); }); })
+        .catch(function () { return json({ ok: false }, 503); });
+    }
+    return json({ ok: false }, 404);
   };
 })();
 
@@ -1513,6 +1543,28 @@ var PUSH = {
     return PUSH.atual().then(function (s) { PUSH.ok = !!s; if (s) return PUSH.enviarInscricao(s).catch(function () {}); });
   }
 };
+function convitePush() {
+  var k = 'cc:prepush:' + chaveUsuario();
+  if (ler(k)) return;
+  var ios = iosPrecisaInstalar();
+  if (!ios && (!PUSH.suporta || Notification.permission !== 'default' || PUSH.ok)) return;
+  var m = $('pesquisa');
+  if (!m.hidden || LEITOR.aberto() || !$('folha').hidden) { setTimeout(convitePush, 30000); return; }
+  m.innerHTML = '<div class="modal pre-push" role="dialog" aria-modal="true" aria-labelledby="pp-tit"><button class="x" aria-label="Fechar">×</button>' +
+    '<div class="pp-ico">🔔</div><h3 id="pp-tit">Quer receber avisos de aulas novas e respostas do suporte?</h3>' +
+    (ios ? '<p class="sub">No iPhone, os avisos só chegam com o app instalado na tela inicial. Leva 10 segundos.</p><button class="btn full" id="pp-sim">Como instalar</button>'
+         : '<p class="sub">A gente só avisa o que importa: aula nova, bônus liberado e a resposta das suas mensagens.</p><button class="btn full" id="pp-sim">Ativar avisos</button>') +
+    '<button class="btn claro full" id="pp-nao" style="margin-top:10px">Agora não</button></div>';
+  m.hidden = false; document.body.style.overflow = 'hidden'; guardar(k, String(Date.now()));
+  m.querySelector('.x').onclick = fecharModal; $('pp-nao').onclick = fecharModal;
+  m.onclick = function (e) { if (e.target === m) fecharModal(); };
+  $('pp-sim').onclick = function () {
+    fecharModal();
+    if (ios) { location.hash = '#app'; return; }
+    PUSH.ativar().then(function () { toast('Avisos ativados!'); if (TELA === 'app') desenharApp(); })
+      .catch(function (e) { toast(String(e && e.message) === 'negado' ? 'Tudo bem. Dá pra ativar depois na aba App.' : 'Não deu pra ativar agora. Tente pela aba App.'); });
+  };
+}
 function iosPrecisaInstalar() { return AMB.ios && !AMB.instalado(); }
 function desenharApp() {
   var b = $('bloco-instalar'), h = '<h3>Instalar o app</h3>';
@@ -1636,7 +1688,7 @@ function carregar(aviso) {
   return fetch('/api/me', { credentials: 'same-origin', cache: 'no-store' }).then(function (r) {
     if (r.status === 401) { DADOS = null; LEITOR.fechar(true); mostrar('v-login'); var e = ler('email-membro'); if (e) $('email').value = e; return; }
     if (!r.ok) throw new Error('falha');
-    return r.json().then(function (d) { var primeira = !DADOS; desenhar(d); rota(); if (primeira) PUSH.sincronizar(); if (aviso) toast(aviso); });
+    return r.json().then(function (d) { var primeira = !DADOS; desenhar(d); rota(); if (primeira) { PUSH.sincronizar(); setTimeout(convitePush, 4000); } if (aviso) toast(aviso); });
   }).catch(function () { if (DADOS) { toast('Sem conexão. Tente de novo em instantes.'); return; } mostrar('v-login'); erro('<b>Não foi possível conectar.</b>Confira sua internet e tente de novo.'); });
 }
 function erro(html) { var el = $('erro-login'); el.innerHTML = html; el.hidden = !html; }
