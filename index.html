@@ -344,6 +344,56 @@
     .folha .alca{display:block;position:absolute;left:50%;top:8px;width:42px;height:5px;margin-left:-21px;border-radius:99px;background:rgba(255,255,255,.85);z-index:2}
   }
 
+  /* ---------- PÁGINA DA AULA ---------- */
+  .aula-pg{position:fixed;inset:0;z-index:90;background:var(--fundo);display:flex;flex-direction:column}
+  .a-rolagem{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .a-grade{max-width:1240px;margin:0 auto;padding:18px 18px calc(36px + env(safe-area-inset-bottom));display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;align-items:start}
+  .a-player{border-radius:18px;overflow:hidden;box-shadow:var(--sombra-2)}
+  .a-info{margin-top:16px}
+  .a-mod{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--roxo);background:var(--roxo-nevoa);border-radius:8px;padding:5px 9px}
+  .a-info h1{font-family:var(--titulo);font-weight:800;font-size:clamp(23px,2.6vw,30px);line-height:1.1;margin:9px 0 6px}
+  .a-info p{font-size:14.5px;color:var(--texto-2)}
+  .a-info .dur{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:var(--texto-3);margin-top:8px}
+  .a-info .dur svg{width:15px;height:15px}
+  .a-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  .a-passo{display:flex;align-items:center;gap:12px;width:100%;min-width:0;text-align:left;background:var(--branco);border:1.5px solid var(--linha-2);border-radius:16px;padding:13px 14px;cursor:pointer;font:inherit;color:inherit;box-shadow:var(--sombra-1)}
+  .a-passo:hover{border-color:var(--roxo)}
+  .a-passo .seta{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--roxo-nevoa);color:var(--roxo)}
+  .a-passo .seta svg{width:18px;height:18px;transform:rotate(90deg)}
+  .a-passo.prox{flex-direction:row-reverse;text-align:right;background:var(--degrade);border-color:transparent;color:#fff}
+  .a-passo.prox .seta{background:rgba(255,255,255,.18);color:#fff}
+  .a-passo.prox .seta svg{transform:rotate(-90deg)}
+  .a-passo .txt{min-width:0;flex:1}
+  .a-passo small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;opacity:.75}
+  .a-passo b{display:block;font-size:14px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .a-passo[disabled]{cursor:default;opacity:.45;box-shadow:none}
+  .a-passo.prox[disabled]{background:var(--verde-nevoa);color:var(--verde);opacity:1}
+  .a-passo.prox[disabled] .seta{background:#fff;color:var(--verde)}
+  .a-lado{position:sticky;top:0;background:var(--branco);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra-1);display:flex;flex-direction:column;max-height:calc(100dvh - 110px);overflow:hidden}
+  .a-lado-cab{padding:16px 16px 12px;border-bottom:1px solid var(--linha)}
+  .a-lado-cab b{font-family:var(--titulo);font-weight:800;font-size:18px}
+  .a-lado-cab span{display:block;font-size:12.5px;color:var(--texto-3);font-weight:600;margin:2px 0 8px}
+  .a-lado-cab .mini-prog{height:6px}
+  .a-lista{overflow-y:auto;padding:6px 10px 12px;overscroll-behavior:contain}
+  .a-lista h4{font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--texto-3);margin:12px 6px 6px}
+  .a-item{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:0;border-radius:12px;padding:8px;cursor:pointer;font:inherit;color:inherit}
+  .a-item:hover{background:var(--fundo)}
+  .a-item .num{width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:12px;font-weight:800;background:var(--fundo);border:1.5px solid var(--linha-2);color:var(--roxo-esc)}
+  .a-item.vista .num{background:var(--verde);border-color:var(--verde);color:#fff}
+  .a-item .tt{min-width:0;flex:1}
+  .a-item b{display:block;font-size:13.5px;font-weight:700;line-height:1.3}
+  .a-item small{font-size:12px;color:var(--texto-3)}
+  .a-item.atual{background:var(--roxo-nevoa)}
+  .a-item.atual .num{background:var(--degrade);border-color:transparent;color:#fff}
+  .a-item.atual b{color:var(--roxo-esc)}
+  @media(max-width:900px){
+    .a-grade{grid-template-columns:1fr;padding:0 0 calc(30px + env(safe-area-inset-bottom));gap:14px}
+    .a-player{border-radius:0;box-shadow:none}
+    .a-info,.a-nav{margin-left:16px;margin-right:16px}
+    .a-lado{position:static;max-height:none;margin:4px 16px 0}
+    .a-lista{overflow:visible}
+  }
+  @media(max-width:480px){.a-nav{grid-template-columns:1fr}.a-passo b{white-space:normal}}
   /* ---------- AULAS ---------- */
   .aulas-hero{position:relative;border-radius:24px;overflow:hidden;background:var(--tinta);color:#fff;box-shadow:var(--sombra-2)}
   .aulas-hero img{width:100%;aspect-ratio:16/8;object-fit:cover;opacity:.55}
@@ -905,6 +955,29 @@
   <div class="l-rolagem" id="l-rolagem"><div class="l-paginas" id="l-paginas"></div></div>
 </div>
 <div class="gaveta" id="gaveta" hidden></div>
+<div class="aula-pg" id="v-aula" role="dialog" aria-modal="true" aria-labelledby="a-titulo" hidden>
+  <header class="l-topo">
+    <button class="l-voltar" id="a-voltar" type="button"><svg aria-hidden="true"><use href="#i-baixo"/></svg><span>Todas as aulas</span></button>
+    <div class="l-tit"><b>Carteiras na Prática</b><span id="a-pos"></span></div>
+    <button class="l-btn" id="a-ver-lista" type="button"><svg aria-hidden="true"><use href="#i-lista"/></svg><span class="t">Conteúdo</span></button>
+  </header>
+  <div class="a-rolagem" id="a-rolagem">
+    <div class="a-grade">
+      <main>
+        <div class="player a-player" id="a-player"></div>
+        <div class="a-info"><span class="a-mod" id="a-mod"></span><h1 id="a-titulo"></h1><p id="a-desc"></p><span class="dur" id="a-dur"></span></div>
+        <nav class="a-nav" aria-label="Navegação entre aulas">
+          <button class="a-passo" id="a-ant" type="button"><span class="seta"><svg aria-hidden="true"><use href="#i-baixo"/></svg></span><span class="txt"><small>Aula anterior</small><b></b></span></button>
+          <button class="a-passo prox" id="a-prox" type="button"><span class="seta"><svg aria-hidden="true"><use href="#i-baixo"/></svg></span><span class="txt"><small>Próxima aula</small><b></b></span></button>
+        </nav>
+      </main>
+      <aside class="a-lado" id="a-lado" aria-label="Conteúdo do curso">
+        <div class="a-lado-cab"><b>Conteúdo do curso</b><span id="a-prog"></span><div class="mini-prog"><i id="a-prog-i"></i></div></div>
+        <div class="a-lista" id="a-lista"></div>
+      </aside>
+    </div>
+  </div>
+</div>
 
 <div class="folha-fundo" id="folha" hidden></div>
 <div class="fundo-notif" id="fundo-notif" hidden></div>
@@ -1290,12 +1363,71 @@ function desenharAulas() {
 function abrirAula(id) {
   var a = null, mod = null; AULAS.forEach(function (m) { m.aulas.forEach(function (x) { if (x.id === id) { a = x; mod = m; } }); });
   if (!a || !a.v || !tem('videoaulas') || (mod.dono && !tem(mod.dono))) return;
-  var u = urlVideo(a.v);
-  abrirFolha('<div class="player">' + (u.iframe ? '<iframe src="' + esc(u.iframe) + '" title="' + esc(a.t) + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>' : '<video src="' + esc(u.video) + '" controls playsinline preload="metadata"></video>') + '</div>' +
-    '<div class="corpo"><h3>' + esc(a.t) + '</h3><p class="desc">' + esc(a.d) + '</p></div>', 'aula');
-  var v = aulasVistas(); v[id] = Date.now(); guardar('cc:aulas:' + chaveUsuario(), JSON.stringify(v));
-  setTimeout(desenharAulas, 300);
+  location.hash = '#aula/' + id;
 }
+/* página da aula (#aula/<id>): vídeo, anterior/próxima e a lista do curso */
+var AULA = (function () {
+  var atual = null, autoplay = false;
+  function seq() {
+    var l = []; if (!tem('videoaulas')) return l;
+    AULAS.forEach(function (m, mi) { if (m.dono && !tem(m.dono)) return; m.aulas.forEach(function (a) { if (a.v) l.push({ a: a, m: m, mi: mi }); }); });
+    return l;
+  }
+  function partes(d) { var i = String(d).lastIndexOf(' · '); return i < 0 ? { d: d, t: '' } : { d: d.slice(0, i), t: d.slice(i + 3) }; }
+  function passo(b, x, fim) {
+    b.disabled = !x; b.removeAttribute('data-ir');
+    if (x) b.setAttribute('data-ir', x.a.id);
+    b.querySelector('b').textContent = x ? x.a.t : fim;
+  }
+  function abrir(id) {
+    var l = seq(), i = -1; l.forEach(function (x, k) { if (x.a.id === id) i = k; });
+    if (i < 0) return false;
+    var x = l[i], a = x.a, p = partes(a.d), u = urlVideo(a.v);
+    if (autoplay && u.iframe) u.iframe += (/wistia/.test(u.iframe) ? '&autoPlay=true' : '&autoplay=1');
+    autoplay = false;
+    if (atual !== id) $('a-player').innerHTML = u.iframe ? '<iframe src="' + esc(u.iframe) + '" title="' + esc(a.t) + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>' : '<video src="' + esc(u.video) + '" controls playsinline preload="metadata"></video>';
+    $('a-mod').textContent = 'Módulo ' + (x.mi + 1) + ' · ' + x.m.mod;
+    $('a-titulo').textContent = a.t;
+    $('a-desc').textContent = p.d;
+    $('a-dur').innerHTML = p.t ? ico('relogio') + esc(p.t) : '';
+    $('a-pos').textContent = 'Aula ' + (i + 1) + ' de ' + l.length;
+    passo($('a-ant'), l[i - 1], 'Esta é a primeira aula');
+    passo($('a-prox'), l[i + 1], 'Você chegou ao fim do curso 🎉');
+    var v = aulasVistas(); if (!v[id]) { v[id] = Date.now(); guardar('cc:aulas:' + chaveUsuario(), JSON.stringify(v)); }
+    var nv = l.filter(function (y) { return v[y.a.id]; }).length, ult = -1;
+    $('a-prog').textContent = nv + ' de ' + l.length + ' assistidas';
+    $('a-prog-i').style.width = Math.round(100 * nv / l.length) + '%';
+    $('a-lista').innerHTML = l.map(function (y, k) {
+      var cab = y.mi !== ult ? '<h4>Módulo ' + (y.mi + 1) + ' · ' + esc(y.m.mod) + '</h4>' : ''; ult = y.mi;
+      var visto = v[y.a.id] && y.a.id !== id, cls = 'a-item' + (y.a.id === id ? ' atual' : '') + (visto ? ' vista' : '');
+      return cab + '<button type="button" class="' + cls + '" data-ir="' + y.a.id + '"' + (y.a.id === id ? ' aria-current="true"' : '') + '><span class="num">' + (visto ? '✓' : dois(k + 1)) + '</span><span class="tt"><b>' + esc(y.a.t) + '</b><small>' + esc(partes(y.a.d).t) + '</small></span></button>';
+    }).join('');
+    var el = $('v-aula'), novo = el.hidden || atual !== id;
+    el.hidden = false; document.body.style.overflow = 'hidden';
+    document.title = a.t + ' · Crochê com Amor';
+    if (novo) {
+      $('a-rolagem').scrollTop = 0;
+      var cur = $('a-lista').querySelector('.atual'), lista = $('a-lista');
+      if (cur && lista.scrollHeight > lista.clientHeight) lista.scrollTop = cur.offsetTop - lista.clientHeight / 3;
+    }
+    atual = id;
+    return true;
+  }
+  function fechar() {
+    if ($('v-aula').hidden) return;
+    $('v-aula').hidden = true; $('a-player').innerHTML = ''; document.body.style.overflow = ''; atual = null;
+    if (TELA === 'aulas') desenharAulas();
+  }
+  $('v-aula').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-ir]');
+    if (b && !b.disabled) { autoplay = true; location.hash = '#aula/' + b.getAttribute('data-ir'); return; }
+    if (e.target.closest('#a-voltar')) { location.hash = '#aulas'; return; }
+    if (e.target.closest('#a-ver-lista')) $('a-lado').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  return { abrir: abrir, fechar: fechar, aberta: function () { return !$('v-aula').hidden; } };
+})();
+/* a aula vista numa aba nova também marca a lista desta aba */
+window.addEventListener('storage', function (e) { if (e.key && e.key.indexOf('cc:aulas:') === 0 && TELA === 'aulas' && !AULA.aberta()) desenharAulas(); });
 document.addEventListener('click', function (e) { var b = e.target.closest('[data-aula]'); if (b) abrirAula(b.getAttribute('data-aula')); });
 
 /* ═══════════ SUPORTE ═══════════ */
@@ -1389,7 +1521,7 @@ function desenharApp() {
   } else if (pedidoInstalar) {
     h += '<p class="sub">Um toque e o ícone aparece na sua tela inicial.</p><button class="btn full" type="button" id="instalar-agora">' + ico('baixar') + 'Instalar agora</button>';
   } else if (AMB.ios && (!AMB.safari || AMB.dentroDeApp)) {
-    h += '<p class="sub">No iPhone, a instalação é feita pelo Safari.</p><div class="estado neutro"><span class="e">🧭</span><span>Abra este endereço no <b>Safari</b> e volte nesta aba: <b>crochecomamor.vercel.app</b></span></div>' +
+    h += '<p class="sub">No iPhone, a instalação é feita pelo Safari.</p><div class="estado neutro"><span class="e">🧭</span><span>Abra este endereço no <b>Safari</b> e volte nesta aba: <b>clubedanina.vercel.app</b></span></div>' +
       '<div class="linha-bts"><button class="btn claro" type="button" id="copiar-link">Copiar o link</button></div>';
   } else if (AMB.ios) {
     h += '<p class="sub">Leva 30 segundos, sem baixar nada da loja.</p><ol class="passos"><li>Toque em <span class="chip">' + ico('compartilhar') + 'Compartilhar</span> na barra do Safari</li>' +
@@ -1660,6 +1792,14 @@ function rota() {
     return;
   }
   if (LEITOR.aberto()) LEITOR.fechar(true);
+  var au = h.match(/^aula\/([a-z0-9]+)$/);
+  if (au) {
+    if (!DADOS) return;
+    fecharFolha(true);
+    if (!AULA.abrir(au[1])) { history.replaceState(null, '', '#aulas'); AULA.fechar(); irTela('aulas'); toast('Essa aula ainda não está liberada pra você.'); }
+    return;
+  }
+  AULA.fechar();
   var pr = h.match(/^produto\/([a-z0-9]+)$/);
   if (pr) { if (!DADOS) return; if (TELA !== 'inicio') irTela('inicio'); abrirProduto(pr[1]); return; }
   if (FOLHA.tipo === 'produto') fecharFolha(true);

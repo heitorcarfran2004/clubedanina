@@ -58,5 +58,5 @@ preencher `resposta`, `status = 'respondido'` e `respondido = now()`; a cliente 
 
 ## Publicar
 
-Repo próprio na Vercel, projeto `crochecomamor` → https://crochecomamor.vercel.app.
+Repo próprio na Vercel, projeto `clubedanina` → https://clubedanina.vercel.app.
 Os PDFs somam 36 MB e ficam no repo. `.vercelignore` tira referência, funções e scripts do ar.
