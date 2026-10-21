@@ -1,0 +1,519 @@
+[
+ {
+  "id": "mod-carteiras",
+  "title": "Carteiras",
+  "subtitle": "25 aulas completas",
+  "description": "Prepare seu fio e agulha para criar modelos incríveis de carteiras, do básico ao avançado.",
+  "thumbnail": "https://images.unsplash.com/photo-1619551731631-294d101239f6?q=80&w=2070&auto=format&fit=crop",
+  "iconName": "https://i.imgur.com/rYdWifx.png",
+  "lessons": [
+   {
+    "id": "cw1",
+    "title": "Carteira Beca - Com Bolso FÁCIL",
+    "duration": "24:16",
+    "description": "Modelo econômico e prático com bolso frontal.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/rgnde3u041",
+    "completed": false
+   },
+   {
+    "id": "cw2",
+    "title": "Modelo Prático e Econômico",
+    "duration": "18:51",
+    "description": "Foco em rapidez de produção e economia de fio.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/4g2iwmx8g4",
+    "completed": false
+   },
+   {
+    "id": "cw3",
+    "title": "Bolsa Bolso Frontal (Iniciantes)",
+    "duration": "27:51",
+    "description": "Ideal para quem está começando agora no crochê.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/hgxu4utzln",
+    "completed": false
+   },
+   {
+    "id": "cw4",
+    "title": "Bolsa Carteira Anne",
+    "duration": "13:53",
+    "description": "Modelo elegante com divisórias internas organizadoras.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/si8j8ad1ao",
+    "completed": false
+   },
+   {
+    "id": "cw5",
+    "title": "Carteira Barbante com Divisórias",
+    "duration": "31:24",
+    "description": "Durabilidade e estrutura usando fios de barbante.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/jaf8qv5trq",
+    "completed": false
+   },
+   {
+    "id": "cw6",
+    "title": "Carteira Express (Divisórias)",
+    "duration": "11:35",
+    "description": "Técnica para produção rápida de peças funcionais.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/q07ra3u43g",
+    "completed": false
+   },
+   {
+    "id": "cw7",
+    "title": "Bolsa com Bolso Sem Costura",
+    "duration": "40:43",
+    "description": "Acabamento de alto nível em peça única.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/ufwq5bhc53",
+    "completed": false
+   },
+   {
+    "id": "cw8",
+    "title": "Bolsa Carteira Prática",
+    "duration": "13:20",
+    "description": "Design moderno e funcional para o dia a dia.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/n5fcknojny",
+    "completed": false
+   },
+   {
+    "id": "cw9",
+    "title": "Carteira Flor Sem Costura",
+    "duration": "20:00",
+    "description": "Beleza e técnica em um modelo sem emendas.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/f373iv59xo",
+    "completed": false
+   },
+   {
+    "id": "cw10",
+    "title": "Linda Carteira de Crochê",
+    "duration": "20:05",
+    "description": "Um clássico indispensável no seu portfólio.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/1hnn1mdk03",
+    "completed": false
+   },
+   {
+    "id": "cw11",
+    "title": "Bolsinha Celular Sem Costura",
+    "duration": "41:38",
+    "description": "Proteção e estilo para smartphones.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/jo9b4mnpkw",
+    "completed": false
+   },
+   {
+    "id": "cw12",
+    "title": "Carteira Ovelha",
+    "duration": "30:09",
+    "description": "Textura diferenciada e visual lúdico.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/r6e13lta7l",
+    "completed": false
+   },
+   {
+    "id": "cw13",
+    "title": "Bolsa Bolso Crochê Sem Costura",
+    "duration": "51:49",
+    "description": "Versão avançada com múltiplos bolsos integrados.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/x2t7qcxfl1",
+    "completed": false
+   },
+   {
+    "id": "cw14",
+    "title": "Carteira Ovelha (Revisão)",
+    "duration": "30:09",
+    "description": "Dicas extras para o modelo de textura ovelha.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/r6e13lta7l",
+    "completed": false
+   },
+   {
+    "id": "cw15",
+    "title": "Bolsa Celular Bolso Sem Costura",
+    "duration": "31:48",
+    "description": "Funcionalidade extra em tamanho compacto.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/kdnruu8b7x",
+    "completed": false
+   },
+   {
+    "id": "cw16",
+    "title": "Carteira Nina (Fio de Malha)",
+    "duration": "19:58",
+    "description": "Estrutura moderna para fios mais encorpados.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/30pask67di",
+    "completed": false
+   },
+   {
+    "id": "cw17",
+    "title": "Novo Design Carteira Crochê",
+    "duration": "16:22",
+    "description": "Explorando novas tendências de design.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/2h7017nq91",
+    "completed": false
+   },
+   {
+    "id": "cw18",
+    "title": "Carteira Divisórias Express",
+    "duration": "11:35",
+    "description": "Revisão da técnica de produção rápida.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/vuv8bs5jx2",
+    "completed": false
+   },
+   {
+    "id": "cw19",
+    "title": "Porta Moeda Fio de Malha",
+    "duration": "27:20",
+    "description": "Peça versátil para organização de miudezas.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/51hi4ze9as",
+    "completed": false
+   },
+   {
+    "id": "cw20",
+    "title": "Bolsa Anne com Divisórias 🌸",
+    "duration": "13:53",
+    "description": "Variação artesanal do modelo Anne.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/rjr8lmjb64",
+    "completed": false
+   },
+   {
+    "id": "cw21",
+    "title": "Carteira Cartões Prática",
+    "duration": "13:01",
+    "description": "Minimalismo focado em porta-cartões.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/19njxa1y5p",
+    "completed": false
+   },
+   {
+    "id": "cw22",
+    "title": "Bolsa Crochê com Zíper",
+    "duration": "22:48",
+    "description": "Técnica ultra fácil de aplicação de zíper.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/9oh2e8c7tw",
+    "completed": false
+   },
+   {
+    "id": "cw24",
+    "title": "Carteira Ágata 💎",
+    "duration": "15:57",
+    "description": "Design luxuoso com acabamentos impecáveis.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/dfzrvmlxs2",
+    "completed": false
+   },
+   {
+    "id": "cw25",
+    "title": "Bolsa Celular Sem Costura (Final)",
+    "duration": "32:35",
+    "description": "Aperfeiçoamento final do modelo de bolsa celular.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/lbab2hpiwn",
+    "completed": false
+   },
+   {
+    "id": "cw26",
+    "title": "Carteira Sem Costura (Técnica)",
+    "duration": "21:33",
+    "description": "Dominando a técnica de peça única.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/aqiv5xbpyk",
+    "completed": false
+   }
+  ]
+ },
+ {
+  "id": "mod-bolsas-ombro",
+  "title": "Bolsas de Ombro",
+  "subtitle": "15 aulas completas",
+  "description": "Crie bolsas versáteis e estilosas para todas as ocasiões.",
+  "thumbnail": "https://images.unsplash.com/photo-1544816153-12ad5d714b21?q=80&w=2070&auto=format&fit=crop",
+  "iconName": "https://i.imgur.com/vhVZuXY.png",
+  "lessons": [
+   {
+    "id": "bw1",
+    "title": "Bolsa Crochê Fio de Malha (Econômica)",
+    "duration": "39:12",
+    "description": "Modelo rápido e fácil para iniciantes.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/1vzq1fllxj",
+    "completed": false
+   },
+   {
+    "id": "bw2",
+    "title": "Bolsa Emily (Luxo Náutico)",
+    "duration": "36:35",
+    "description": "Sofisticação com o uso do fio náutico.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/sh0mfbt2s4",
+    "completed": false
+   },
+   {
+    "id": "bw3",
+    "title": "Bolsa Diva (Iniciantes)",
+    "duration": "53:36",
+    "description": "Tutorial completo e detalhado passo a passo.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/y1zga7cedj",
+    "completed": false
+   },
+   {
+    "id": "bw4",
+    "title": "Bolsa Vitória (Tamanho Grande)",
+    "duration": "31:29",
+    "description": "Espaço e estilo em um design clássico.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/4iys2rmwgn",
+    "completed": false
+   },
+   {
+    "id": "bw5",
+    "title": "Bolsa Teresa (Rápida)",
+    "duration": "22:31",
+    "description": "Técnica para produção ágil de uma peça linda.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/dpseyagk2f",
+    "completed": false
+   },
+   {
+    "id": "bw6",
+    "title": "Bolsa Silvana",
+    "duration": "27:08",
+    "description": "Design moderno com acabamentos primorosos.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/fowxd2vmq9",
+    "completed": false
+   },
+   {
+    "id": "bw7",
+    "title": "Nova Bolsa Econômica",
+    "duration": "29:54",
+    "description": "Variação de design com foco em baixo custo.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/lo9lvgv8qd",
+    "completed": false
+   },
+   {
+    "id": "bw8",
+    "title": "Bolsa Clara (Prática)",
+    "duration": "47:54",
+    "description": "Ideal para o dia a dia, com estrutura reforçada.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/mqjm6fwfnz",
+    "completed": false
+   },
+   {
+    "id": "bw9",
+    "title": "Baguete Meia Lua",
+    "duration": "39:04",
+    "description": "Tendência fashion em formato arredondado.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/raa5v213da",
+    "completed": false
+   },
+   {
+    "id": "bw10",
+    "title": "Baguete Prática (Fio de Malha)",
+    "duration": "21:47",
+    "description": "Versão compacta e rápida da baguete.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/rjtm7odylf",
+    "completed": false
+   },
+   {
+    "id": "bw11",
+    "title": "Bolsa Brisa (Design Novo)",
+    "duration": "34:03",
+    "description": "Inovação em pontos e acabamentos.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/i7wko2wlkp",
+    "completed": false
+   },
+   {
+    "id": "bw12",
+    "title": "Tutorial Bag de Ombro",
+    "duration": "44:10",
+    "description": "Peça versátil em fio de malha.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/1jatzbjkom",
+    "completed": false
+   },
+   {
+    "id": "bw13",
+    "title": "Baguete Vendável",
+    "duration": "29:00",
+    "description": "Modelo campeão de vendas pelo baixo custo e beleza.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/k7bu3m0rbe",
+    "completed": false
+   },
+   {
+    "id": "bw14",
+    "title": "Bolsa Lucy (Fácil)",
+    "duration": "25:41",
+    "description": "Passo a passo simplificado para ótimos resultados.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/tfw0fo01ke",
+    "completed": false
+   },
+   {
+    "id": "bw15",
+    "title": "Bolsa Malha Express",
+    "duration": "26:21",
+    "description": "Rapidez na confecção sem perder a elegância.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/c5ntzh812v",
+    "completed": false
+   }
+  ]
+ },
+ {
+  "id": "mod-necessaires",
+  "title": "Necessaires",
+  "subtitle": "6 aulas exclusivas",
+  "description": "Aprenda a estruturar e finalizar necessaires perfeitas para organização.",
+  "thumbnail": "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=2070&auto=format&fit=crop",
+  "iconName": "https://i.imgur.com/VRxZb45.png",
+  "lessons": [
+   {
+    "id": "nw1",
+    "title": "Necessaire Nina (Zíper Embutido)",
+    "duration": "46:53",
+    "description": "Técnica profissional de aplicação de zíper para acabamento perfeito.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/nrq7vld5hf",
+    "completed": false
+   },
+   {
+    "id": "nw2",
+    "title": "Necessaire em Fio Náutico",
+    "duration": "30:39",
+    "description": "Trabalhando com fio náutico para peças duráveis e modernas.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/3qubs4d239",
+    "completed": false
+   },
+   {
+    "id": "nw3",
+    "title": "Necessaire Iniciante (EuroRoma)",
+    "duration": "23:09",
+    "description": "O modelo perfeito para seu primeiro projeto de necessaire.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/0nxfs2m7qr",
+    "completed": false
+   },
+   {
+    "id": "nw4",
+    "title": "Necessaire Ecosoft Premium",
+    "duration": "43:23",
+    "description": "Aprenda a trabalhar com fios macios e estruturados.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/t4xq7r3kuw",
+    "completed": false
+   },
+   {
+    "id": "nw5",
+    "title": "Bolsa de Mão/Necessaire Ponto Gota",
+    "duration": "22:05",
+    "description": "Design sofisticado utilizando o ponto gota para texturas únicas.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/ekfqe6mb9f",
+    "completed": false
+   },
+   {
+    "id": "nw6",
+    "title": "Organizador Multiuso Prático",
+    "duration": "21:43",
+    "description": "Ideal para materiais escolares, maquiagem ou acessórios.",
+    "videoUrl": "https://fast.wistia.net/embed/iframe/9vkepv8bey",
+    "completed": false
+   }
+  ]
+ },
+ {
+  "id": "mod-materiais",
+  "title": "Materiais",
+  "subtitle": "Lista completa",
+  "description": "Tudo o que você precisa com preços e onde comprar",
+  "thumbnail": "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=2070&auto=format&fit=crop",
+  "iconName": "https://i.imgur.com/5Jn5xR5.png",
+  "lessons": [
+   {
+    "id": "m1",
+    "title": "🧵 Fios e Cordões",
+    "duration": "",
+    "description": "Tipos de fios, preços sugeridos e onde encontrar os melhores materiais para sua carteira.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "🧵 Fios e Cordões\nIdeal para quem busca qualidade e durabilidade nas peças.\n\n**Fio Macramê**\n• R$ 15-35\n• Ideal para carteiras estruturadas. Escolha cores que combinem com sua proposta. Fios de algodão 100% são mais fáceis de trabalhar.\n• Onde comprar: Lojas de artesanato locais, Mercado Livre, AliExpress, Shopee.\n\n**Fio Barroco**\n• R$ 10-20\n• Excelente custo-benefício. Perfeito para iniciantes. Disponível em muitas cores.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee, Americanas.\n\n**Fio Rafia**\n• R$ 8-15\n• Ótimo para carteiras de verão. Leve e confortável de trabalhar.\n• Onde comprar: Lojas de artesanato, Mercado Livre, AliExpress.\n\n**Fio de Algodão Fino**\n• R$ 12-25\n• Para trabalhos mais delicados e elegantes. Ideal para nécessaires.\n• Onde comprar: Lojas especializadas, Mercado Livre, Etsy.\n\n**Fio Grosso (Chunky)**\n• R$ 20-40\n• Projetos rápidos! Carteira pronta em poucas horas. Muito em alta.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee."
+   },
+   {
+    "id": "m2",
+    "title": "🛠️ Ferramentas Essenciais",
+    "duration": "",
+    "description": "Agulhas, tesouras e acessórios indispensáveis para o dia a dia.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "🛠️ Ferramentas Essenciais\nTer as ferramentas certas faz toda a diferença na velocidade e acabamento do seu trabalho.\n\n**Agulha de Crochê 3.0 mm**\n• R$ 3-8\n• Tamanho mais versátil. Escolha agulhas de alumínio (mais leves) ou plástico (mais acessíveis).\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee, Armarinhos.\n\n**Agulha Tapeçaria (Lanterna)**\n• R$ 2-5\n• Essencial para rematar e esconder pontas. Tenha sempre à mão.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Armarinhos.\n\n**Tesoura de Artesanato**\n• R$ 5-15\n• Invista em uma boa tesoura. Facilita muito o trabalho final.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee.\n\n**Isqueiro ou Queimador**\n• R$ 3-10\n• Para queimar as pontas de fios sintéticos. Cuidado com fios naturais!\n• Onde comprar: Mercado Livre, Shopee, Lojas de conveniência.\n\n**Marcador de Pontos**\n• R$ 2-5\n• Ajuda a contar pontos. Pode usar um fio de cor diferente também.\n• Onde comprar: Lojas de artesanato, Mercado Livre.\n\n**Kits de Agulhas**\n• R$ 15-30\n• Invista em um kit com diferentes tamanhos. Você precisará para diferentes projetos.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee."
+   },
+   {
+    "id": "m3",
+    "title": "🔐 Fechos e Acessórios",
+    "duration": "",
+    "description": "Zíperes, botões e detalhes que valorizam sua peça.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "🔐 Fechos e Acessórios\nO acabamento final é o que transforma um simples crochê em um produto de luxo.\n\n**Zíper 32 cm**\n• R$ 3-8\n• Tamanho padrão para carteiras. Escolha cores que combinem com seu fio.\n• Onde comprar: Armarinhos, Mercado Livre, Shopee.\n\n**Zíper 20 cm**\n• R$ 2-5\n• Para nécessaires menores e carteiras mini.\n• Onde comprar: Lojas de artesanato, Armarinhos, Mercado Livre.\n\n**Botões Decorativos**\n• R$ 5-15\n• Alternativa ao zíper. Escolha botões que combinem com seu design (madeira, coco, metal).\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee.\n\n**Fecho Magnético**\n• R$ 5-12\n• Prático e elegante. Ótimo para carteiras pequenas.\n• Onde comprar: Mercado Livre, Shopee, AliExpress.\n\n**Corrente Decorativa**\n• R$ 5-15\n• Para carteiras clutch e bolsas. Adiciona elegância instantânea.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee.\n\n**Miçangas e Contas**\n• R$ 10-30\n• Para personalizar e adicionar brilho. Infinitas possibilidades de design.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee."
+   },
+   {
+    "id": "m4",
+    "title": "✨ Materiais Complementares",
+    "duration": "",
+    "description": "Fitas, espelhos e mimos para surpreender suas clientes.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "✨ Materiais Complementares\nPequenos detalhes que agregam valor e funcionalidade.\n\n**Fita Decorativa**\n• R$ 5-15\n• Para acabamento interno e detalhes de embalagem.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee.\n\n**Espelho Pequeno**\n• R$ 3-8\n• Adicione funcionalidade extra à sua carteira (costurado no forro).\n• Onde comprar: Lojas de variedades, Mercado Livre, Shopee.\n\n**Chaveiro / Tassel**\n• R$ 2-5\n• Prenda no zíper para mais praticidade e charme.\n• Onde comprar: Lojas de artesanato, Mercado Livre, Shopee.\n\n**Adesivo Decorativo**\n• R$ 5-10\n• Para personalizar tags e embalagens.\n• Onde comprar: Papelarias, Mercado Livre."
+   },
+   {
+    "id": "m5",
+    "title": "📊 Orçamento Estimado",
+    "duration": "",
+    "description": "Quanto investir para começar? Veja os orçamentos para cada nível.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "📊 Orçamento Estimado para Iniciantes\n\n**Kit Iniciante (Básico)**\n• Estimativa: R$ 51-81\n• Fio (2-3 unidades): R$ 30-60\n• Agulha de Crochê: R$ 5\n• Agulha Tapeçaria: R$ 3\n• Tesoura: R$ 8\n• Zíper: R$ 5\n\n**Kit Intermediário (Completo)**\n• Estimativa: R$ 130-210\n• Fios variados (5-6 unidades): R$ 60-120\n• Kit de Agulhas (5-10 tamanhos): R$ 20\n• Acessórios variados: R$ 30-50\n• Ferramentas complementares: R$ 20\n\n**Kit Profissional (Premium)**\n• Estimativa: R$ 330-430\n• Fios de qualidade premium: R$ 150-200\n• Agulhas profissionais: R$ 50\n• Acessórios diversos: R$ 80-100\n• Ferramentas especializadas: R$ 50-80"
+   }
+  ]
+ },
+ {
+  "id": "mod-vendas",
+  "title": "Vendas",
+  "subtitle": "Guia completo",
+  "description": "Precificação, marketing e estratégias de venda para monetizar seu trabalho.",
+  "thumbnail": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2070&auto=format&fit=crop",
+  "iconName": "https://i.imgur.com/07K8CDa.png",
+  "lessons": [
+   {
+    "id": "v1",
+    "title": "💰 Precificação Estratégica",
+    "duration": "",
+    "description": "Aprenda a fórmula básica: Preço = (Custo do Material × 2) + Mão de Obra + Lucro. Entenda como valorizar sua hora e pesquisar a concorrência.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "💰 Precificação Estratégica\nA precificação é um dos maiores desafios para quem começa a vender. Aqui estão as estratégias mais eficazes:\n\n📊 Fórmula Básica de Precificação:\nPreço = (Custo do Material × 2) + Mão de Obra + Lucro\n\nExemplo Prático:\n• Custo de material: R$ 30\n• Tempo de produção: 4 horas\n• Valor da hora: R$ 20 (você decide)\n• Mão de obra: R$ 80\n• Lucro desejado (30%): R$ 33\n• Preço final: R$ 143 (arredonde para R$ 145)\n\n🧮 **Recomendação Profissional: Calcula Papel**\nPara facilitar sua vida e garantir que nenhum custo seja esquecido, recomendo fortemente o uso da calculadora [Calcula Papel](https://calcula-papel.com/calculator).\n\n**Por que usar esta ferramenta?**\n1. **Detalhamento de Materiais:** Você insere o valor total que pagou no material e a quantidade exata que usou na peça (ex: quantos metros de linha).\n2. **Mão de Obra Real:** Ela calcula seu valor por hora com base no seu objetivo de \"salário mensal\" e horas trabalhadas.\n3. **Custos Fixos:** Não esqueça da luz, internet e embalagem! A ferramenta ajuda a diluir esses custos no preço final.\n4. **Margem de Lucro:** Define exatamente quanto você quer colocar de margem sobre o custo total.\n\n💡 Dicas Importantes:\n• Não venda por menos do que custa produzir\n• Considere o tempo de aprendizado (primeiras peças levam mais tempo)\n• Pesquise preços de concorrentes no mercado"
+   },
+   {
+    "id": "v2",
+    "title": "🛒 Plataformas de Venda",
+    "duration": "",
+    "description": "Instagram, TikTok, Mercado Livre, Shopee, Etsy e WhatsApp Business. Escolha o melhor canal para o seu perfil e comece a vender.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "🛒 Plataformas de Venda Online\nExistem várias plataformas onde você pode vender suas peças. Escolha as que melhor se adequam ao seu perfil:\n\n📱 Instagram e TikTok (Redes Sociais)\nIdeal para: Começar sem investimento\nComo funciona: Poste fotos/vídeos, receba DMs, venda por WhatsApp\nVantagens: Sem taxa, total controle, comunidade engajada\nDesvantagens: Requer consistência, segurança de pagamento é sua responsabilidade\n\n🏪 Mercado Livre\nIdeal para: Vendas em larga escala\nComo funciona: Crie uma loja, liste seus produtos, receba pagamentos\nVantagens: Plataforma confiável, muitos compradores, proteção ao vendedor\nDesvantagens: Taxa de 16% do valor da venda\n\n🛍️ Shopee\nIdeal para: Público jovem, promoções frequentes\nComo funciona: Similar ao Mercado Livre\nVantagens: Comissão menor (15%), interface amigável\nDesvantagens: Competição alta, muitos vendedores\n\n🎨 Etsy\nIdeal para: Produtos artesanais premium, público internacional\nComo funciona: Loja virtual com design próprio\nVantagens: Público que valoriza artesanato, melhor margem\nDesvantagens: Taxa de listagem, comissão de 6.5%, frete internacional complexo\n\n💬 WhatsApp Business\nIdeal para: Vendas diretas, relacionamento com cliente\nComo funciona: Catálogo no WhatsApp, negocie direto\nVantagens: Pessoal, sem taxa, relacionamento direto\nDesvantagens: Requer gerenciamento manual, sem proteção de pagamento\n\nDicas importantes:\n• Comece com 1-2 plataformas e expanda conforme ganha experiência\n• Mantenha os mesmos preços em todas as plataformas\n• Use ferramentas como Canva para criar imagens atrativas\n• Invista em boas fotos - elas são sua melhor ferramenta de venda"
+   },
+   {
+    "id": "v3",
+    "title": "📢 Estratégias de Marketing",
+    "duration": "",
+    "description": "Fotos de qualidade, descrições vendedoras, conteúdo de bastidores e relacionamento com o cliente para atrair mais vendas.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "📢 Estratégias de Marketing\nO marketing é essencial para vender. Aqui estão estratégias comprovadas:\n\n📸 Conteúdo Visual (Essencial)\n• Tire fotos em boa iluminação (luz natural é melhor)\n• Mostre a carteira em uso (em mãos, em bolsas)\n• Faça vídeos curtos mostrando o processo de crochê\n• Crie \"antes e depois\" do seu trabalho\n• Use reels e TikToks - algoritmo favorece vídeos\n\n✍️ Descrição do Produto (Venda)\nEscreva: \"Carteira Artesanal em Crochê - Modelo Exclusivo com Zíper Seguro, Ideal para Cartões e Dinheiro, Feita à Mão com Fio de Algodão Premium\"\n\n🎯 Estratégias de Conteúdo\n• Poste regularmente (3-5 vezes por semana)\n• Mostre o processo de criação (pessoas amam ver o \"behind the scenes\")\n• Compartilhe depoimentos de clientes\n• Crie desafios: \"Qual carteira você quer que eu faça?\"\n• Faça promoções sazonais (Dia das Mães, Natal, etc)\n\n🤝 Relacionamento com Cliente\n• Responda mensagens rapidamente (em até 2 horas)\n• Seja educado e profissional\n• Ofereça personalizações (cores, tamanhos)\n• Peça feedback após a compra\n• Crie programa de fidelidade (\"Compre 5, ganhe desconto\")"
+   },
+   {
+    "id": "v4",
+    "title": "📦 Embalagem e Entrega",
+    "duration": "",
+    "description": "A primeira impressão conta! Dicas de embalagens afetivas e como organizar o frete e as opções de envio.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "📦 Embalagem e Entrega\nA embalagem é a primeira impressão do cliente. Invista nela!\n\n🎁 Embalagem Atrativa\n• Use caixas ou bolsas de qualidade (não sacolas plásticas)\n• Adicione papel de seda ou papel crepom\n• Inclua um cartão de visita ou agradecimento\n• Coloque a carteira em um saquinho de organza\n• Adicione um aroma agradável (opcional)\n• Custo: R$ 3-8 por embalagem (vale muito a pena)\n\n📮 Opções de Entrega\nEntrega Local:\n• Encontre com o cliente (gratuito, mais rápido)\n• Agende em local seguro\n\nCorreios:\n• PAC: mais barato, demora 5-15 dias\n• SEDEX: mais rápido, custa mais\n\n💡 Dicas de Frete\n• Ofereça frete grátis para compras acima de R$ 100\n• Negocie taxas com transportadora (volume)\n• Embale bem para evitar danos\n• Inclua número de rastreamento na nota\n• Comunique ao cliente quando o pedido foi enviado"
+   },
+   {
+    "id": "v5",
+    "title": "📊 Gestão e Organização",
+    "duration": "",
+    "description": "Planilhas de controle, processos de venda ideais e como gerenciar as formas de pagamento para um negócio saudável.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "📋 Gestão de Pedidos e Clientes\nOrganização é fundamental para crescer. Aqui estão as melhores práticas:\n\n📊 Ferramentas de Controle\nPlanilha Google Sheets (Gratuita):\n• Crie uma planilha com: Data, Cliente, Produto, Preço, Status, Data Entrega\n• Acompanhe seus pedidos em tempo real\n• Calcule seu faturamento mensal\n\n✅ Processo de Venda Ideal\n1. Cliente se interessa (vê post, recebe recomendação)\n2. Você responde com detalhes do produto\n3. Cliente confirma interesse\n4. Você envia forma de pagamento\n5. Cliente paga\n6. Você começa a produção\n7. Você avisa quando está pronto\n8. Cliente recebe\n9. Você pede avaliação/feedback\n\n💳 Formas de Pagamento\n• Transferência Bancária (PIX é rápido)\n• Cartão de Crédito (use Stripe, PagSeguro)\n• Boleto (para clientes que preferem)\n• Parcelado (Mercado Pago, PagSeguro)"
+   },
+   {
+    "id": "v6",
+    "title": "🚀 Escalando o Negócio",
+    "duration": "",
+    "description": "Do MEI ao site próprio. Como aumentar a produção, contratar ajuda e expandir sua linha de produtos.",
+    "videoUrl": "",
+    "completed": false,
+    "fullContent": "🚀 Escalando seu Negócio\nQuando começar a vender bem, é hora de escalar. Aqui estão as próximas etapas:\n\n📈 Produção em Lote\n• Comece a fazer carteiras \"por encomenda\"\n• Crie coleções sazonais (Verão, Inverno, Festas)\n\n👥 Terceirização\n• Quando a demanda crescer, contrate outras crocheteiras\n• Crie um padrão de qualidade\n• Você foca em vendas e marketing\n\n🏪 Expansão de Produtos\n• Além de carteiras: bolsas, mochilas, acessórios\n• Crie linha de preços diferentes (básica, premium, luxo)\n\n🌐 Presença Online Forte\n• Invista em site próprio\n• Contrate fotógrafo profissional\n• Contrate publicidade paga (Instagram Ads)\n\n💼 Formalização\n• Abra MEI (Microempreendedor Individual)\n• Emita nota fiscal\n• Registre sua marca"
+   }
+  ]
+ }
+]
